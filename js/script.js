@@ -5,9 +5,18 @@ let content = document.querySelectorAll(".skills__content");
 const interval = 20;
 let angle = 0;
 const angle_increment = 6;
-let percents = [100, 80, 30, 70, 70];
-for (let i = 0; i < 5; i++) {
-    animation(i, percents[i]);
+let percents = [100, 50, 30, 75, 80];
+console.log(window.scrollY);
+
+window.addEventListener("scroll", startAnimation)
+
+function startAnimation() {
+    if (window.scrollY >= 350) { 
+        for (let i = 0; i < 5; i++) {
+            animation(i, percents[i]);
+        }
+        window.removeEventListener("scroll", startAnimation);
+    }
 }
 
 function animation(i, percentNum) {

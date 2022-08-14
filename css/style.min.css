@@ -477,7 +477,7 @@
         border-radius: 10px;
         cursor: url("../cursor.svg"), auto;
         color: #fff;
-        font-family: Teko;
+        font-family: inherit;
         font-size: 30px;
         padding-left: 30px
     }
