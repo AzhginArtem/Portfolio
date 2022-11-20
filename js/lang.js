@@ -56,12 +56,24 @@ let langArr = {
         ru : "Когда я узнал о Bootstrap, я подумал, что это самая глупая вещь во всем Интернете. Различные, но одинаковые детали с сотнями и тысячами стилей, меняющих цвет или размер кнопки, казались мне сложнейшей головоломкой. Но многие веб-разработчики говорят мне, что Bootstrap делает сайт быстрее и имеет много интересных примеров, поэтому, когда вы устали и хотите увидеть, как ваше навигационное меню должно выглядеть на мобильном телефоне, вы можете добавить меню из Bootstrap, а затем сделать твой"
     },
     ".projects__title" : {
-        en : "Wow, it's empty now. But your project can be <mark>HERE!</mark>",
-        ru : "Ого, сейчас здесь пусто. Но ваш проект может оказаться <mark>ЗДЕСЬ!</mark>",
+        en : "Projects",
+        ru : "Проекты",
     },
-    ".projects__btn" : {
-        ru : 'Связаться',
-        en : "Get In Touch"
+    "#netx" : {
+        en: 'Project was created by working on freelance for company who sells network devices for cybersport.',
+        ru: "Проект был создан на фрилансе для компании продающей сетевые устройства для киберспорта"
+    },
+    "#handbox_title": {
+        en: 'Handbox Mainling List',
+        ru: 'Email писмо для Handbox'
+    },
+    "#handbox" : {
+        en: "That was a task that i've done for Handbox company to found work. This company works with mailing lists.",
+        ru: "Это было тестовое задание для компании Handbox. Выполнял для поиска практики для колледжа"
+    },
+    "#compmir2" : {
+        en : "Project was created by working on freelance. After that project person who give me this task offered me to continue to work on next project",
+        ru : "Проект был создан на фрилансе. После этого проекта меня приняли в команду разработчиков на еще несколько проектов"
     },
     ".contact__title" : {
         en: "Want to work with me?",

@@ -6,7 +6,7 @@ const interval = 20;
 let angle = 0;
 const angle_increment = 6;
 let percents = [100, 50, 30, 75, 80];
-console.log(window.scrollY);
+
 
 window.addEventListener("scroll", startAnimation)
 
@@ -80,11 +80,13 @@ lang.addEventListener('click', () => {
     animationElement.style.position = 'absolute';
     gsap.to(animationElement, {width: innerWidth, height: innerHeight, duration: 1});
     document.querySelector(".skills__menu").style.zIndex = -1;
+    document.querySelector(".projects__container").style.zIndex = -1;
     setTimeout(() => {
         if (!document.querySelector(".ru")) {
             document.querySelector("body").style.fontFamily = "Yanone Kaffeesatz"; 
             for (let key in langArr){
-                document.querySelector("" + key).innerHTML = langArr[key]['ru'];
+                console.log(key);
+                document.querySelector(key).innerHTML = langArr[key]['ru'];
             }
             document.querySelector(".header__lang_circle").classList.add("ru");
         } else {
@@ -99,6 +101,7 @@ lang.addEventListener('click', () => {
         gsap.to(animationElement, {width: widthOfElement, height: 200, duration: 1});
         setTimeout(() => {
             document.querySelector(".skills__menu").style.zIndex = 1;
+            document.querySelector(".projects__container").style.zIndex = 1;
         }, 280);
     }, 1500)
     animationElement.style.position = 'relative';
